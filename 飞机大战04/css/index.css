@@ -1,0 +1,124 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background: #000;
+}
+
+#box {
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   width: 512px;
+   height: 768px;
+   margin: auto;
+   /*background-image: url(images/bg_2.jpg);*/
+}
+
+#box h2 {
+   text-align: center;
+   line-height: 230px;
+   font-size: 30px;
+   color: #fff;
+}
+
+#box ul li {
+   list-style-type: none;
+   width: 200px;
+   height: 40px;
+   margin: 50px auto;
+   line-height: 40px;
+   text-align: center;
+   background-color: #fff;
+   font-size: 20px;
+   cursor: pointer;
+   transition: .2s;
+}
+
+#box ul li:hover {
+   background-color: pink;
+}
+
+#box .plane {
+   position: absolute;
+   width: 60px;
+   height: 48px;
+   background: url('images/plane_1.png') 0 0/cover;
+}
+
+#box .bullet {
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   background: url('images/fire.png') 0 0/cover;
+}
+
+#box .enemy {
+   position: absolute;
+   top: 0;
+   width: 54px;
+   height: 40px;
+   background: url(images/enemy_small.png) 0 0/cover;
+}
+
+#box .boom {
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   background: url('images/boom_small.png') 0 0/cover;
+}
+
+#box .planeBoom {
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   background: url('images/boom_big.png') 0 0/cover;
+}
+
+#box .interFace {
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin: auto;
+   top: 200px;
+   width: 300px;
+   height: 350px;
+   background-color: rgba(0, 0, 0, .5);
+   animation: bling 1s infinite alternate;
+}
+
+#box .interFace button {
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   width: 100px;
+   height: 30px;
+   margin: auto;
+   color: #000;
+}
+
+#box .scoreContainer {
+   position: absolute;
+   width: 100px;
+   height: 30px;
+   text-align: center;
+   line-height: 30px;
+   color: #fff;
+   font-size: 30px;
+}
+
+@keyframes bling {
+   0% {
+      opacity: 1;
+   }
+
+   100% {
+      opacity: .7;
+   }
+}
